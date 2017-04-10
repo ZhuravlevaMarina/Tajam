@@ -74,6 +74,7 @@ gulp.task('font:build', function(){                    // Task to relocate fonts
     gulp.src([                                          // path to files to build
         './frontend/fonts/**/*.ttf',
         './frontend/fonts/**/*.woff',
+        './frontend/fonts/**/*.woff2',
         './frontend/fonts/**/*.eot',
         './frontend/fonts/**/*.svg'
     ])

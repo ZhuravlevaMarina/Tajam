@@ -1,0 +1,55 @@
+.quote {
+  background: url(/public/images/bg_quote.png);
+  background-size: cover;
+  -moz-background-size: cover; /* Firefox 3.6 */
+  background-position: center; /* Internet Explorer 7/8 */
+  text-align: center;
+  padding: 70px 0 70px;
+  .carousel {
+    padding: 40px 0 60px;
+    .carousel-inner{
+      color: $whiteFont;
+      .name{
+        margin: 55px 0 45px;
+      }
+    }
+
+    .carousel-indicators{
+     li {
+        width: 45px;
+        height: 45px;
+        border: none;
+        margin-right: 15px;
+        &.firstPhoto {
+          background: url("/public/images/face1.png");
+        }
+        &.secondPhoto {
+          background: url("/public/images/face2.png");
+        }
+        &.thirdPhoto {
+          background: url("/public/images/face3.png");
+        }
+        &.fourPhoto {
+          background: url("/public/images/face4.png");
+        }
+        &.fivePhoto {
+          background: url("/public/images/face5.png");
+        }
+        &.active {
+          transform: scale(1.5, 1.5);
+        }
+     }
+    }
+    .carousel-control.right{
+      background-image: none;
+    }
+    .carousel-control.left{
+      background-image: none;
+    }
+  }
+  .carousel-control{
+    top: 80%;
+    bottom: 40px;
+    width: 35%;
+  }
+}

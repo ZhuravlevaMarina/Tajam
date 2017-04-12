@@ -1,0 +1,250 @@
+.logo_clients{
+ .image-item{
+   display: inline;
+   padding: 10px;
+ }
+}
+.input {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  margin: 1em;
+  max-width: 460px;
+  width: calc(100% - 2em);
+  vertical-align: top;
+}
+.input__field {
+  position: relative;
+  display: block;
+  float: right;
+  padding: 0.8em;
+  width: 60%;
+  border: none;
+  border-radius: 0;
+  background: #f0f0f0;
+  color: #aaa;;
+  font-family: $fontMainText;
+  -webkit-appearance: none; /* for box shadows to show on iOS */
+}
+.input__field:focus {
+  outline: none;
+}
+.input__label {
+  display: inline-block;
+  float: right;
+  padding: 0 1em;
+  width: 40%;
+  color: #413d4b;
+  font-size: 0.875em;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.input__label-content {
+  position: relative;
+  display: block;
+  padding: 1.6em 0;
+  width: 100%;
+}
+.graphic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill: none;
+}
+.icon {
+  color: #ddd;
+  font-size: 150%;
+}
+.input--haruki {
+  margin: 4em 1em 1em;
+}
+.input__field--haruki {
+  padding: 0.3em 0.2em;
+  width: 100%;
+  background: transparent;
+  color: #AFB5BB;
+  font-size: 1.55em;
+}
+
+.input__label--haruki {
+  position: absolute;
+  width: 100%;
+  text-align: left;
+  pointer-events: none;
+}
+
+.input__label-content--haruki {
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before,
+.input__label--haruki::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  background: #6a7989;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label--haruki::before {
+  top: 0;
+}
+
+.input__label--haruki::after {
+  bottom: 0;
+}
+
+.input__field--haruki:focus + .input__label--haruki .input__label-content--haruki,
+.input--filled .input__label-content--haruki {
+  -webkit-transform: translate3d(0, -90%, 0);
+  transform: translate3d(0, -90%, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::before,
+.input--filled .input__label--haruki::before {
+  -webkit-transform: translate3d(0, -0.5em, 0);
+  transform: translate3d(0, -0.5em, 0);
+}
+
+.input__field--haruki:focus + .input__label--haruki::after,
+.input--filled .input__label--haruki::after {
+  -webkit-transform: translate3d(0, 0.5em, 0);
+  transform: translate3d(0, 0.5em, 0);
+}
+/* Yoko */
+.input__field--yoko {
+  z-index: 10;
+  width: 100%;
+  background: transparent;
+  color: #f5f5f5;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.input__label--yoko {
+  position: relative;
+  width: 100%;
+  color: $color_bg;
+  text-align: left;
+}
+
+.input__label--yoko::before {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 4em;
+  background: $color_bg;
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 90deg);
+  -webkit-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label--yoko::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25em;
+  background: $color_bg;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.input__label-content--yoko {
+  padding: 0.75em 0;
+}
+
+.input__field--yoko:focus,
+.input--filled .input__field--yoko {
+  opacity: 1;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+
+.input__field--yoko:focus + .input__label--yoko::before,
+.input--filled .input__label--yoko::before {
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, 0deg);
+}
+
+.input__field--yoko:focus + .input__label--yoko,
+.input--filled .input__label--yoko {
+  pointer-events: none;
+}
+
+.input__field--yoko:focus + .input__label--yoko::after,
+.input--filled .input__label--yoko::after {
+  -webkit-transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+  transform: perspective(1000px) rotate3d(1, 0, 0, -90deg);
+}
+
+.btn1 {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* General button style (reset) */
+.btn1:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* Button 2 */
+.btn-2 {
+  background: none;
+  color: $blue;
+  box-shadow: 0 6px $blue;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+/* Button 2a */
+.btn-2a {
+  border-radius: 0 0 5px 5px;
+}
+
+.btn-2a:hover {
+  box-shadow: 0 4px #ab3c3c;
+  top: 2px;
+}
+
+.btn-2a:active {
+  box-shadow: 0 0 #ab3c3c;
+  top: 6px;
+}

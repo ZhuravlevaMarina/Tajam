@@ -1,0 +1,35 @@
+.footer-box{
+  background: url("/public/images/bg_footer.png");
+  color: $whiteFont;
+  .social-icon {
+    %common{
+      font-family: 'icomoon';
+      color: $whiteFont;
+      font-size: 35px;
+    }
+    .Facebook:before {
+      @extend %common;
+      content: "\e905";
+    }
+    .Twitter:before{
+      @extend %common;
+      content: "\e904";
+    }
+    .YouTube:before {
+      @extend %common;
+      content: "\e900";
+    }
+    .google_plus:before {
+      @extend %common;
+      content: "\e901";
+    }
+    .instagram:before {
+      @extend %common;
+      content: "\e902";
+    }
+    .Dribbble:before {
+      @extend %common;
+      content: "\e903";
+    }
+  }
+}

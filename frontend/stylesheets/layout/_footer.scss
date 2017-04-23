@@ -9,27 +9,27 @@
     }
     .Facebook:before {
       @extend %common;
-      content: "\e905";
+      content: "\e906";
     }
     .Twitter:before{
       @extend %common;
-      content: "\e904";
+      content: "\e90b";
     }
     .YouTube:before {
       @extend %common;
-      content: "\e900";
+      content: "\e907";
     }
     .google_plus:before {
       @extend %common;
-      content: "\e901";
+      content: "\e908";
     }
     .instagram:before {
       @extend %common;
-      content: "\e902";
+      content: "\e909";
     }
     .Dribbble:before {
       @extend %common;
-      content: "\e903";
+      content: "\e90a";
     }
   }
 }

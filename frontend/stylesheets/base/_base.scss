@@ -5,6 +5,7 @@ h1{
 .mainFont{
   font-family: $fontMainText;
   font-size: 0.875em;
+  line-height: 1.5em;
 }
 h2{
   font-family: $fontBold;
@@ -13,4 +14,9 @@ h2{
 h3{
   font-family: $fontMenu;
   font-size:0.875em;
+}
+.topic{
+  font-family: $fontMainText;
+  font-size: 1em;
+  margin-top: 15px;
 }

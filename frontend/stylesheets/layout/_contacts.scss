@@ -227,9 +227,9 @@
 }
 /* Button 2 */
 .btn-2 {
-  background: none;
-  color: $blue;
-  box-shadow: 0 6px $blue;
+  background: #46a3cc;
+  color: $whiteFont;
+  box-shadow: 0 6px #110c31;
   -webkit-transition: none;
   -moz-transition: none;
   transition: none;
@@ -240,11 +240,11 @@
 }
 
 .btn-2a:hover {
-  box-shadow: 0 4px #ab3c3c;
+  box-shadow: 0 4px #110c31;
   top: 2px;
 }
 
 .btn-2a:active {
-  box-shadow: 0 0 #ab3c3c;
+  box-shadow: 0 0 #110c31;
   top: 6px;
 }

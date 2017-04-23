@@ -1,8 +1,55 @@
 .promotion-caption{
+  margin: 70px 0 40px;
+  .topic{
+    margin-top: 15px;
+  }
   .separatorGrey{
     background: url("/public/images/separator-grey.png") repeat-x;
     width: 50px;
     height: 1px;
+    margin: 24px auto 0;
   }
-  
+}
+h3{
+  margin: 30px 0 20px;
+  font-family: $fontMenu;
+  font-size: 0.875em;
+  text-transform: uppercase;
+}
+.promotion-block{
+  margin-top: 30px;
+  %picture{
+    font-family: 'icomoon';
+    font-size: 60px;
+    color: $colorIcon;
+  }
+  .pc:before{
+    @extend %picture;
+    content: "\e905";
+  }
+  .brush:before{
+    @extend %picture;
+    content: "\e904";
+  }
+  .mobile:before{
+    @extend %picture;
+    content: "\e903";
+  }
+  .chart:before{
+    @extend %picture;
+    content: "\e900";
+  }
+  .game:before{
+    @extend %picture;
+    content: "\e901";
+  }
+  .love:before{
+    @extend %picture;
+    content: "\e902";
+  }
+  .promotion-text{
+    font-family: $fontMainText;
+    font-size: 0.875em;
+    line-height: 1.375em;
+  }
 }

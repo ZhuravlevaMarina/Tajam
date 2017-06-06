@@ -1,0 +1,15 @@
+.works {
+  .mainFont {
+    position: relative;
+    color: #000;
+    &:before {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 13px;
+      top: 2px;
+      right: -12px;
+      background-image: url("/public/images/arrow.png");
+    }
+  }
+}

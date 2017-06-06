@@ -16,11 +16,20 @@
     }
   .thumbnail{
     background: none;
-    border: 1px solid $colorBorder;
+    border: none;
     .caption{
+      color: $whiteFont;
+      width: 220px;
+      margin: 0 auto;
+      border: 1px solid $colorBorder;
+      border-top: none;
       .name{
         font-family: $fontMenu;
         font-size: 0.875em;
+        text-transform: uppercase;
+      }
+      .profession{
+        font-family: $fontMainText;
         text-transform: uppercase;
       }
     }

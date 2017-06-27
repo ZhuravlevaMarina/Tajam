@@ -27,14 +27,15 @@ a {
   border: none;
   background: none;
   padding: 0;
+  box-shadow: none;
   &:hover {
     text-decoration: none;
     color: $blue;
+    box-shadow: none;
   }
 }
 .btn-1 {
   font-weight: 100;
-  margin-bottom: 100px;
   svg {
     height: 45px;
     left: 0;
@@ -59,5 +60,6 @@ a {
     stroke-dasharray: 15, 310;
     stroke-dashoffset: 48;
     transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+
   }
 }

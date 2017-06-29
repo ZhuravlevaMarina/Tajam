@@ -1,8 +1,10 @@
-.logo_clients{
- .image-item{
-   display: inline;
-   padding: 10px;
- }
+.logo_clients {
+  .row {
+    margin: 50px 0 0;
+    .image-item {
+      display: inline;
+    }
+  }
 }
 .input {
   position: relative;

@@ -1,11 +1,37 @@
 .footer-box{
   background: url("/public/images/bg_footer.png");
   color: $whiteFont;
-  .social-icon {
+  .box-text{
+    font-family: $fontMainText;
+    font-size: 0.875em;
+    line-height: 1.625em;
+    margin-top: 16px;
+  }
+  .box-contact h3{
+    margin: 17px 0 38px;
+  }
+  .box-contact{
+    .form-inline{
+      .form-group {
+
+        .form-control {
+          width: 211px;
+          height: 45px;
+          background: none;
+          border-radius: 0;
+        }
+      }
+    }
+  }
+  .social-icon{
+    margin-top: 28px;
     %common{
       font-family: 'icomoon';
       color: $whiteFont;
       font-size: 35px;
+      &:hover{
+        color: $colorIcon;
+      }
     }
     .Facebook:before {
       @extend %common;
@@ -31,33 +57,9 @@
       @extend %common;
       content: "\e90a";
     }
+    a{
+      text-decoration: none;
+    }
   }
-  .onclick-menu {
-    position: relative;
-    display: inline-block;
-  }
-  .onclick-menu:before {
-    content: "click me!";
-  }
-  .onclick-menu:focus {
-    /* clicking on label should toggle the menu */
-    pointer-events: none;
-  }
-  .onclick-menu:focus .onclick-menu-content {
-    /*  opacity is 1 in opened state (see below) */
-    opacity: 1;
-    visibility: visible;
 
-    /* don't let pointer-events affect descendant elements */
-    pointer-events: auto;
-  }
-  .onclick-menu-content {
-    position: absolute;
-    z-index: 1;
-
-    /* use opacity to fake immediate toggle */
-    opacity: 0;
-    visibility: hidden;
-    transition: visibility 0.5s;
-  }
 }

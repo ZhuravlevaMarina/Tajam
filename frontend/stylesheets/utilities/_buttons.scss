@@ -1,23 +1,20 @@
 a {
-  background: none;
-  border-bottom: 1px solid;
-  color: $blue;
-  line-height: 1.4;
-  padding: .25em;
+  color: $whiteFont;
   text-decoration: none;
   &:hover {
-    color: $blue;
+    color: $colorActive;
+    text-decoration: none;
   }
 }
 .btn {
-  color: $blue;
+  color: $colorActive;
   cursor: pointer;
   display: block;
   font-family: $fontButton;
   font-size: 1em;
   font-weight: 400;
   line-height: 45px;
-  margin: 0 auto 2em;
+  margin: 0 auto;
   max-width: 160px;
   position: relative;
   text-decoration: none;
@@ -30,7 +27,7 @@ a {
   box-shadow: none;
   &:hover {
     text-decoration: none;
-    color: $blue;
+    color: $colorActive;
     box-shadow: none;
   }
 }
@@ -45,7 +42,7 @@ a {
   }
   rect {
     fill: none;
-    stroke: $blue;
+    stroke: $colorActive;
     stroke-width: 2;
     stroke-dasharray: 422, 0;
   }
@@ -54,7 +51,7 @@ a {
   background: none;
   font-weight: 900;
   letter-spacing: 1px;
-  color: $blue;
+  color: $colorActive;
   rect {
     stroke-width: 5;
     stroke-dasharray: 15, 310;

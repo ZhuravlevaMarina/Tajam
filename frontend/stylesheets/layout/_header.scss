@@ -11,12 +11,20 @@
       color: $whiteFont;
       padding: 20px 0 0 15px;
       &:hover {
-        color: $blue;
+        color: $colorActive;
       }
     }
   }
-  .glyphicon-menu-hamburger{
-    color: $blue;
+  .nav-pills li{
+    font-family: $fontMenu;
+    font-size: 0.8125em;
+  }
+  .nav-pills a{
+    padding: 10px 12px;
+  }
+  .nav-pills>li.active>a{
+    background: none;
+    color: $colorActive;
   }
 }
 #carousel-example{
@@ -31,17 +39,29 @@
   }
   .carousel-content{
     color: $whiteFont;
-    .separator {
-      background: url("/public/images/separator.png") repeat-x;
-      width: 50px;
-      height: 1px;
-      margin: 30px auto 30px;
+    h1{
+      position: relative;
+      &:after{
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        width: 70px;
+        height: 1px;
+        margin-right: auto;
+        margin-left: auto;
+        background: $colorActive;
+      }
     }
     .mainFont{
-      margin: 30px 0 54px;
+      margin: 50px 0 54px;
     }
   }
   .carousel-indicators .active{
-    background-color: $blue;
+    background-color: $colorActive;
+  }
+  .carousel-indicators{
+    bottom: -30px;
   }
 }

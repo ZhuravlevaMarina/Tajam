@@ -3,6 +3,11 @@
     margin: 50px 0 0;
     .image-item {
       display: inline;
+      img {
+        @media (max-width: $screen-small) {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
@@ -52,6 +57,9 @@
   padding: 1.6em 0;
   width: 100%;
 }
+.btn-1{
+  margin-top: 22px;
+}
 .graphic {
   position: absolute;
   top: 0;
@@ -63,7 +71,7 @@
   font-size: 150%;
 }
 .input--haruki {
-  margin: 4em 1em 1em;
+  margin: 4em 0 1em;
 }
 .input__field--haruki {
   padding: 0.3em 0.2em;
@@ -122,4 +130,15 @@
 .input--filled .input__label--haruki::after {
   -webkit-transform: translate3d(0, 0.5em, 0);
   transform: translate3d(0, 0.5em, 0);
+}
+.form-box{
+  @media (max-width: $screen-small) {
+    text-align: center;
+  }
+}
+.logo-box{
+  @media (max-width: $screen-small) {
+    text-align: center;
+    margin-top: 30px;
+  }
 }

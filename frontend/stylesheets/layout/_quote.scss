@@ -9,11 +9,29 @@
     padding: 40px 0 60px;
     .carousel-inner{
       color: $whiteFont;
-      .name{
+      .text{
+        font-family: $fontMainText;
+        font-size: 1em;
+        line-height: 1.625em;
+      }
+      .person{
         margin: 55px 0 45px;
+        .person-name{
+          font-family: $fontMenu;
+          font-size: 0.875em;
+          text-transform: uppercase;
+          margin-bottom: 14px;
+        }
+        .person-job{
+          font-family: $fontMainText;
+          font-size: 0.8125em;
+          text-transform: uppercase;
+        }
       }
     }
     .carousel-indicators{
+      bottom: -40px;
+      width: 70%;
      li {
         width: 45px;
         height: 45px;
@@ -47,7 +65,7 @@
     }
   }
   .carousel-control{
-    top: 80%;
+    top: 100%;
     bottom: 40px;
     width: 35%;
   }

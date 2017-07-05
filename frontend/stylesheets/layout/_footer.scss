@@ -1,24 +1,36 @@
 .footer-box{
   background: url("/public/images/bg_footer.png");
+  background-size: cover;
+  -moz-background-size: cover;  /* Firefox 3.6 */
+  background-position: center;  /* Internet Explorer 7/8 */
   color: $whiteFont;
   .box-text{
     font-family: $fontMainText;
     font-size: 0.875em;
     line-height: 1.625em;
     margin-top: 16px;
-  }
+    .box-image{
+      margin-right: 17px;
+      display: block;
+      float: left;
+      clear: both;
+      }
+    .box-address{
+      padding-left: 31px;
+    }
+    }
   .box-contact h3{
     margin: 17px 0 38px;
   }
   .box-contact{
     .form-inline{
       .form-group {
-
         .form-control {
-          width: 211px;
           height: 45px;
           background: none;
           border-radius: 0;
+          padding: 18px 0;
+          text-align: center;
         }
       }
     }
@@ -29,8 +41,9 @@
       font-family: 'icomoon';
       color: $whiteFont;
       font-size: 35px;
+      margin-right: 8px;
       &:hover{
-        color: $colorIcon;
+        color: $colorActive;
       }
     }
     .Facebook:before {
@@ -61,5 +74,13 @@
       text-decoration: none;
     }
   }
-
+.copyright{
+  margin-top: 70px;
+  .copyright-item a{
+    margin-right: 30px;
+  }
+  .copyright-item{
+    margin-bottom: 20px;
+  }
+}
 }
